@@ -1,0 +1,441 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:white;
+    position: relative;
+}
+.big-box {
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    right: 300px; /* Distance from the right margin */
+    left: auto; /* Ensures it’s positioned relative to the right margin */
+    margin-top: 45px;
+    background-color:white; /* Optional background color */
+    display: flex;
+    flex-direction: column; /* Allows vertical alignment */
+    align-items: center; /* Centers the image horizontally*/
+    padding-top: 35px; /* Distance from the top of the container*/
+    border: 1px solid grey; /* Grey border*/
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+.big-box img{
+    width: 200px;
+    height: 60px;
+    object-fit: cover; 
+}
+.input-container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column; /* Aligns input boxes vertically */
+    gap: 10px; /* Space between the input boxes */
+}
+input[type="text"] {
+    width: 230px; /* Adjust the width of the input boxes */
+    height: 20px;
+    padding: 7px;
+    border: 1px solid rgb(226, 220, 220);
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: rgb(238, 234, 234);
+}
+button {
+    width: 245px; /* Adjust the width of the button */
+    height: 20 px;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6fb3fc; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 12px;
+    cursor: pointer; /* Shows a pointer cursor on hover */
+}
+.line-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the text and lines horizontally */
+    margin-top: 20px;
+} 
+.line {
+    flex: 1; /*Makes lines expand to fill available space*/
+    height: 2px; /*Thickness of the line*/
+    width: 105px;
+    background-color: rgb(201, 200, 200); /* Color of the line */
+}
+
+.text {
+    font-size: 12px; /*Adjust font size as needed*/
+    color:  rgb(121, 118, 118) ;
+    margin-right: 6px;
+    margin-left: 6px;   
+}
+.logo-text {
+    padding: 7px;
+    display: flex; /* Align logo and text in a row */
+    align-items: center; /* Align items vertically in the middle */
+    justify-content: center; 
+    font-size: 15px;
+    color: rgb(44, 44, 104);
+    margin-bottom: 0px; 
+}
+.logo-text img {
+    width: 15px; /* Adjust width of logo */
+    height: 15px; /* Adjust height of logo */
+    margin-right: 10px;
+    margin-bottom: 0px; 
+    object-fit: cover; 
+}
+.passwordline {
+    font-size: 8 px;
+    margin: 0; /* Remove extra margin from <p> */
+    padding: 0; /* Remove extra padding from <p> */
+    margin-top: 0px; 
+    text-decoration: none; /* Removes underline */
+}
+.input-container2 {
+    width: 350px;
+    height: 80px;
+    font-size: 8 px;
+    position: absolute;
+    right: 300px; /* Distance from the right margin */
+    left: auto; /* Ensures it’s positioned relative to the right margin */
+    margin-top: 480px;
+    background-color:white; /* Optional background color */
+    display: flex;
+    flex-direction: column; /* Allows vertical alignment */
+    align-items: center; /* Centers the image horizontally */
+    justify-content: center; 
+    border: 1px solid grey; /* Grey border */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+.input-container2 a{
+    color: blue; /* Link color */
+    text-decoration: none; /* Removes underline */
+    margin-left: 5px; /* Adds a little space between the text and the link */
+}
+.app {
+    margin-top: 10px; /* Adjust this margin if you want more space between "Sign up" and "Get the app" */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Adjust the size as needed */
+    color: #333;
+    position: absolute;
+    right: 430px;
+    margin-top: 570px; /* Adjust to move below the Sign up box */
+}
+.button-container {
+    margin-top: 10px;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    gap: 5px; /* Space between the buttons */
+    right: 350px;
+    margin-top: 600px; /* Adjust to move below the Sign up box */
+}
+.links-container{
+    align-items: center;
+    position: absolute;
+    display: flex;
+    gap: 30px; 
+    margin-top: 750px;
+    font-size: 12px;
+    margin-left: 150px;
+    color: rgba(255, 172, 172, 0.425);
+    text-decoration: none; /* Removes underline */ 
+}
+.links-container2 {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    gap: 30px; 
+    margin-top: 780px;
+    font-size: 12px;
+    margin-left: 500px;
+    color: rgba(255, 172, 172, 0.425);
+    text-decoration: none; /* Removes underline */
+}
+/* Change to filled black when clicked */
+.side-box {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex; /* Makes elements align in a column or row */
+    flex-direction: column; 
+    gap: 15px; /* Adds space between the elements */        
+}
+.vertical-line {
+    border-left: 1px solid lightgrey; /* Border to create the vertical line */
+    height: 200px; /* Adjust the height of the line */
+    left: 200px; /* Optional: Adjust the space from left */
+    height: 100vh; /* 100% of the viewport height */
+    position: fixed; /* Fix it in place as the user scrolls */
+    top: 0; /* Start from the top of the screen */ 
+}
+.element {
+    padding: 10px;
+    font-size: 18px;
+}
+.element a{
+    color: black;
+}
+.side-box img{
+    width: 120px;
+    height: 40px;
+    object-fit: cover;
+    margin-left: -5px;   
+}
+a{
+    text-decoration: none; /* Removes underline */
+}
+.stories-container {
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start; /* Align stories from the left */
+    gap: 10px; /* Smaller space between each story */
+    margin-bottom: 50px;
+  }
+  .story,.story1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .story1{
+    margin-left: 300px; /* Reduce space from the left margin for the first story */
+}
+  .story p,.story1 p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #333;
+    text-align: center;
+  }
+  .story img,.story1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--black);
+  }
+  .story img:active,.story1 img:active {
+    background-color: gray; /* Change background color to gray on touch/click */
+  }
+  
+  .post-header {
+    display: flex;
+    top:150px;
+    position: absolute;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-left: 350px;
+
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Flex container for profile and details */
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+/* Username and time */
+.username a{
+    font-weight: bold;
+    margin-right: 13px;
+}
+
+/* Song and location details */
+.songdetails a{
+    font-size: 12px;
+    color: black;
+}
+.timedetails{
+    font-size: 14px;
+    color: gray;
+}
+/* Extra settings icon or dots */
+.options {
+    font-size: 18px;
+    margin-left: 260px;
+    color: black;
+}
+.post-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    top: 220px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 350px;
+}
+.post{
+    width: 430px;
+    height: 520px;
+}
+
+.post-footer {
+    color: black;
+    margin-top: 10px; /* Space between the image and the icons */
+    width: 100%; /* Make footer span full width */
+}
+
+.icon-bar {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px; /* Align icons to the left */
+} 
+.icon-bar i {
+    margin-right: 15px; /* Adjust the spacing as needed */
+} 
+.icon-bar i.fa-bookmark {
+    margin-left: 350px; /* Extra space for the bookmark icon */
+} 
+.like-count {
+    display: block; /* Ensures the like count goes to the next line */
+    font: 10px;
+    color: black;
+}
+.icon-bar i:hover {
+    opacity: 0.7; /* Dims the icon when hovered */
+}
+.comment input{
+    border: none; /* Remove any border */
+    outline: none; /* Remove the focus outline */
+    background-color: none;
+}
+
+.suggestion {
+    top:0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align stories from the left */
+    align-items: flex-start;
+    gap: 20px; /* Space between the profile and suggestion sections */
+    margin-left: 900px;
+    padding: 10px;
+}
+
+.myprofile-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.myprofile {
+    margin-left: 10px;
+}
+
+.username a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.name a {
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+}
+
+.switch a {
+    font-size: 12px;
+    color: rgb(49, 143, 197);
+    margin-left: 120px;  
+}
+
+.people {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px;
+    width: 300px;
+}
+.people span{
+    color: gray;
+}
+.suggested-header a {
+    font-size: 12px;
+    color: rgb(49, 143, 197);
+    margin-left: 130px;
+    margin-top: 20px;   
+}
+
+.see-all {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.suggestedname{
+    color: black;
+    font-weight: bold;
+}
+.suggestion-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.action-button {
+    font-size: 14px;
+    color: rgb(35, 158, 230);
+    margin-left: auto;  
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    color: #45a049; /* Changes button color when hovered */
+}
+.home-links-container a{
+    margin-top: 30px;
+    font-size: 12px;
+    color: gray;
+    gap: 15px;
+}
+.home-links-container p{
+    margin-top: 40px;
+}
